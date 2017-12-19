@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{9B93D35B-E20E-6184-44FE-768D4BB51B29}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>E:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>E:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\BrushTerrain\Scripts\BrushTerrain.cs" />
+     <Compile Include="Assets\LodTools\Settings\LodNameSettings.cs" />
+     <Compile Include="Assets\PostFX\Effect\AmplifyColor\AmplifyColor.cs" />
+     <Compile Include="Assets\PostFX\Effect\Bloom\XBloom.cs" />
+     <Compile Include="Assets\PostFX\Effect\BrightnessSaturationAndContrast\BrightnessSaturationAndContrast.cs" />
+     <Compile Include="Assets\PostFX\Effect\CameraEffect\Scripts\CameraFilterPack_Blend2Camera_Color.cs" />
+     <Compile Include="Assets\PostFX\Effect\CameraEffect\Scripts\CameraFilterPack_Blend2Camera_ColorDodge.cs" />
+     <Compile Include="Assets\PostFX\Effect\CameraEffect\Scripts\CameraFilterPack_Blend2Camera_Saturation.cs" />
+     <Compile Include="Assets\PostFX\Effect\CameraEffect\Scripts\CameraFilterPack_Colors_Adjust_ColorRGB.cs" />
+     <Compile Include="Assets\PostFX\Effect\CameraEffect\Scripts\CameraFilterPack_FX_EarthQuake.cs" />
+     <Compile Include="Assets\PostFX\Effect\CameraEffect\Scripts\CameraFilterPack_TV_WideScreenCircle.cs" />
+     <Compile Include="Assets\PostFX\Effect\CameraEffect\Scripts\CameraFilterPack_TV_WideScreenHorizontal.cs" />
+     <Compile Include="Assets\PostFX\Effect\CameraEffect\Scripts\CameraFilterPack_TV_WideScreenVertical.cs" />
+     <Compile Include="Assets\PostFX\Effect\ChromaticAberration\ChromaticAberration.cs" />
+     <Compile Include="Assets\PostFX\Effect\FaceOut\FrameFadeout.cs" />
+     <Compile Include="Assets\PostFX\Effect\FastVignette\FastVignette.cs" />
+     <Compile Include="Assets\PostFX\Effect\LensDistortionBlur\LensDistortionBlur.cs" />
+     <Compile Include="Assets\PostFX\Effect\MobileGaussianBlur\BlurOptimized.cs" />
+     <Compile Include="Assets\PostFX\Effect\PostEffectBase.cs" />
+     <Compile Include="Assets\PostFX\Effect\ScreenFlip\ScreenFlip.cs" />
+     <Compile Include="Assets\PostFX\Effect\ScreenGlow\ScreenGlow.cs" />
+     <Compile Include="Assets\PostFX\Effect\ScreenOutline\OutlineEffect.cs" />
+     <Compile Include="Assets\PostFX\Effect\ScreenSpeedLine\SpeedLineEffect.cs" />
+     <Compile Include="Assets\PostFX\PostEffectBehaviour.cs" />
+     <Compile Include="Assets\PostFX\Scripts\PostEffectSettings.cs" />
+     <Compile Include="Assets\PostFX\Scripts\RenderTexturePool.cs" />
+     <None Include="Assets\LodTools\使用说明.txt" />
+     <None Include="Assets\PostFX\Effect\FaceOut\Resources\FrameFadeout.shader" />
+     <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_Blend2Camera_Saturation.shader" />
+     <None Include="Assets\PostFX\Effect\AmplifyColor\Resources\AmplifyShader.shader" />
+     <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_FX_EarthQuake.shader" />
+     <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_Blend2Camera_ColorDodge.shader" />
+     <None Include="Assets\PostFX\Effect\ScreenOutline\Resources\Outline.shader" />
+     <None Include="Assets\PostFX\Effect\LensDistortionBlur\Resources\LensDistortionBlur.shader" />
+     <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_TV_WideScreenVertical.shader" />
+     <None Include="Assets\SkyCloud\skyTest 2.shader" />
+     <None Include="Assets\PostFX\Effect\ChromaticAberration\Resources\ChromaticAberration.shader" />
+     <None Include="Assets\PostFX\Effect\ScreenOutline\Resources\Blur.shader" />
+     <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_TV_WideScreenHorizontal.shader" />
+     <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_TV_WideScreenCircle.shader" />
+     <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_Colors_Adjust_ColorRGB.shader" />
+     <None Include="Assets\PostFX\Effect\ScreenSpeedLine\Resources\sf-Screen-SpeedLine.shader" />
+     <None Include="Assets\PostFX\Effect\BrightnessSaturationAndContrast\Resources\BrightnessSaturationAndContrast.shader" />
+     <None Include="Assets\PostFX\Effect\ScreenOutline\Resources\OutlineReplace.shader" />
+     <None Include="Assets\PostFX\Effect\MobileGaussianBlur\Resources\MobileBlur.shader" />
+     <None Include="Assets\PostFX\Effect\ScreenGlow\Resources\ScreenGlow.shader" />
+     <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_Blend2Camera_Color.shader" />
+     <None Include="Assets\PostFX\Effect\ScreenFlip\Resources\ScreenFlip.shader" />
+     <None Include="Assets\PostFX\Effect\FastVignette\Resources\FastVignette.shader" />
+     <None Include="Assets\BrushTerrain\Shader\TerrainShader.shader" />
+     <None Include="Assets\PostFX\Effect\Bloom\Resources\MobileBloom.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>E:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>E:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>E:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>E:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>E:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>E:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
