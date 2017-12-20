@@ -51,6 +51,7 @@
      <None Include="Assets\LodTools\使用说明.txt" />
      <None Include="Assets\PostFX\Effect\FaceOut\Resources\FrameFadeout.shader" />
      <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_Blend2Camera_Saturation.shader" />
+     <None Include="Assets\Hair\Hair.shader" />
      <None Include="Assets\PostFX\Effect\AmplifyColor\Resources\AmplifyShader.shader" />
      <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_FX_EarthQuake.shader" />
      <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_Blend2Camera_ColorDodge.shader" />
@@ -64,7 +65,10 @@
      <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_TV_WideScreenCircle.shader" />
      <None Include="Assets\PostFX\Effect\CameraEffect\Resources\CameraFilterPack_Colors_Adjust_ColorRGB.shader" />
      <None Include="Assets\PostFX\Effect\ScreenSpeedLine\Resources\sf-Screen-SpeedLine.shader" />
+     <None Include="Assets\Hair\HairShader.shader" />
+     <None Include="Assets\Hair\PBRHair.shader" />
      <None Include="Assets\PostFX\Effect\BrightnessSaturationAndContrast\Resources\BrightnessSaturationAndContrast.shader" />
+     <None Include="Assets\Skin_Lee Perry-Smith\Skin.shader" />
      <None Include="Assets\PostFX\Effect\ScreenOutline\Resources\OutlineReplace.shader" />
      <None Include="Assets\PostFX\Effect\MobileGaussianBlur\Resources\MobileBlur.shader" />
      <None Include="Assets\PostFX\Effect\ScreenGlow\Resources\ScreenGlow.shader" />
