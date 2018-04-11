@@ -26,7 +26,9 @@ namespace PostFX
         ScreenSpeedLine,
         ScreenFlip,
         AmplifyColor,
-        BlurOptimized
+        BlurOptimized,
+        EdgeDetection,
+        SpiritPressure
     }
 
     [Serializable]
@@ -120,10 +122,13 @@ namespace PostFX
 
 
 
+        [Tooltip("This is EdgeDetection")]
+        [SerializeField]
+        private EdgeDetection edgeDetection = new EdgeDetection();
 
-
-
-
+        [Tooltip("This is SpiritPressure")]
+        [SerializeField]
+        private SpiritPressure spiritPressure = new SpiritPressure();
 
         public List<PostEffectBase> Initialization()
         {
@@ -148,7 +153,8 @@ namespace PostFX
             list.Add(screenFlip);
             list.Add(amplifyColor);
             list.Add(blurOptimized);
-
+            list.Add(edgeDetection);
+            list.Add(spiritPressure);
             return list;
         }
 

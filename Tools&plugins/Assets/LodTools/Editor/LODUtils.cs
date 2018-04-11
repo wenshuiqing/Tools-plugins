@@ -18,7 +18,7 @@ public class LODUtils
     private static LodNameSettings lds;
     static LODUtils()
     {
-        LODUtils LD = new LODUtils();
+        new LODUtils();
     }
 
     private LODUtils()

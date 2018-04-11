@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace PostFX
 {
-
+    [RequireComponent(typeof(Camera))]
     [ExecuteInEditMode]
     public class PostEffectBehaviour : MonoBehaviour
     {
@@ -14,14 +14,16 @@ namespace PostFX
 
         private List<PostEffectBase> peblist = null;
         // Use this for initialization
-
+        private  Camera newcamera;
         void Awake()
         {
+            newcamera = GetComponent<Camera>();
             peblist = postEffect.Initialization();
         }
 
         void OnEnable()
         {
+            PostEffectBase.camera = newcamera;
             foreach (var p in peblist)
             {
                 p.Enable();

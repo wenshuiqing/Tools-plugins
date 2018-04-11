@@ -9,12 +9,12 @@ namespace PostFX
     [Serializable]
     public class PostEffectBase
     {
+        public static Camera camera;
         protected Shader shader;
         protected Material material;
 
         [Tooltip("is Apply")]
         public bool IsApply;
-        protected bool mIsApply;
 
         [HideInInspector]
         public EffectType et;
@@ -22,7 +22,7 @@ namespace PostFX
 
         public virtual void Enable() { }
 
-        public virtual void Update(){}
+        public virtual void Update() { }
 
         protected virtual void CreateMaterial() { }
 

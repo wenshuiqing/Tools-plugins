@@ -29,7 +29,7 @@ namespace PostFX
         [Range(0f, 100f), Tooltip("Amount of vignetting on screen.")]
         public float Darkness = 30f;
 
-
+        
         public override void Enable()
         {
             et = EffectType.FastVignette;
