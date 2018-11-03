@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.Rendering;
 using System;
 
@@ -50,7 +50,7 @@ namespace PostFX
                 }
             }
         }
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.OutlineEffect;
             CreateMaterial();
@@ -58,15 +58,16 @@ namespace PostFX
             m_RenderCommand.name = "Render Solid Color Silhouette";
             Refresh();
         }
-        public override void Update()
-        {
-#if UNITY_EDITOR
-            Refresh();
-#endif
-        }
+        //        public override void Update()
+        //        {
+        //#if UNITY_EDITOR
+        //            Refresh();
+        //#endif
+        //        }
         public override void Refresh()
         {
             m_RenderCommand.ClearRenderTarget(true, true, Color.clear);
+
             if (m_SrcRenders != null)
             {
                 for (int i = 0; i < m_SrcRenders.Length; ++i)
@@ -141,11 +142,25 @@ namespace PostFX
             RenderTexturePool.Release(solidSilhouette);
         }
 
-        public override void Dispose()
+
+        public override void OnDispose()
         {
-            base.Dispose();
-            m_RenderCommand.Clear();
-            m_BlurMaterial = null;
+            base.OnDispose();
+            if (m_RenderCommand != null)
+            {
+                m_RenderCommand.Clear();
+            }
+            if (m_BlurMaterial)
+            {
+#if UNITY_EDITOR
+                Material.DestroyImmediate(m_BlurMaterial);
+
+#else
+                Material.Destroy(m_BlurMaterial);
+#endif
+
+            }
+            m_SrcRenders = null;
         }
 
     }

@@ -41,7 +41,7 @@ namespace PostFX
 
             }
         }
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.EdgeDetection;
             CreateMaterial();
@@ -49,7 +49,6 @@ namespace PostFX
             SetCameraFlag();
         }
 
-        [ImageEffectOpaque]
         public override void PreProcess(RenderTexture source, RenderTexture destination)
         {
             if (material == null)
@@ -80,10 +79,10 @@ namespace PostFX
 
         void SetCameraFlag()
         {
-            if (mode == EdgeDetectMode.SobelDepth || mode == EdgeDetectMode.SobelDepthThin)
-                camera.depthTextureMode |= DepthTextureMode.Depth;
-            else if (mode == EdgeDetectMode.TriangleDepthNormals || mode == EdgeDetectMode.RobertsCrossDepthNormals)
-                camera.depthTextureMode |= DepthTextureMode.DepthNormals;
+            //if (mode == EdgeDetectMode.SobelDepth || mode == EdgeDetectMode.SobelDepthThin)
+            //    camera.depthTextureMode |= DepthTextureMode.Depth;
+            //else if (mode == EdgeDetectMode.TriangleDepthNormals || mode == EdgeDetectMode.RobertsCrossDepthNormals)
+            //    camera.depthTextureMode |= DepthTextureMode.DepthNormals;
         }
 
 

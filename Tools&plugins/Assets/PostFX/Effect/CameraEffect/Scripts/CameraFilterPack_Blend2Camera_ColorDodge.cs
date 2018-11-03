@@ -34,7 +34,7 @@ namespace PostFX
         }
 
 
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.Blend2Camera_ColorDodge;
             CreateMaterial();
@@ -77,6 +77,11 @@ namespace PostFX
                 Graphics.Blit(source, destination, material);
                 RenderTexturePool.Release(Camera2tex);
             }
+        }
+
+        public override bool InValidQuality()
+        {
+            return false;
         }
 
     }

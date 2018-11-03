@@ -17,7 +17,7 @@ namespace PostFX
 
 
         // Use this for initialization
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.ScreenGlow;
             CreateMaterial();

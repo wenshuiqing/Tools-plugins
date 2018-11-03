@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "Taecg/Hair/HairPBR"{
 	Properties{
 	_Color("Color", Color) = (1,1,1,1)
@@ -82,7 +84,7 @@ Shader "Taecg/Hair/HairPBR"{
 					o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
 					o.posWorld = mul(unity_ObjectToWorld, v.vertex);
 					float3 lightColor = _LightColor0.rgb;
-					o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+					o.pos = UnityObjectToClipPos(v.vertex);
 					UNITY_TRANSFER_FOG(o,o.pos);
 					TRANSFER_VERTEX_TO_FRAGMENT(o)
 						return o;
@@ -267,7 +269,7 @@ Shader "Taecg/Hair/HairPBR"{
 					o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
 					o.posWorld = mul(unity_ObjectToWorld, v.vertex);
 					float3 lightColor = _LightColor0.rgb;
-					o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+					o.pos = UnityObjectToClipPos(v.vertex);
 					UNITY_TRANSFER_FOG(o,o.pos);
 					return o;
 				}

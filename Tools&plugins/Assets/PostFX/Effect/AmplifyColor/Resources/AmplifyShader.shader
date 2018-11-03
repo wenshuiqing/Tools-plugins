@@ -1,4 +1,6 @@
-﻿// Amplify Color - Advanced Color Grading for Unity Pro
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+// Amplify Color - Advanced Color Grading for Unity Pro
 // Copyright (c) Amplify Creations, Lda <info@amplify.pt>
 
 Shader "Hidden/AmplifyColor"
@@ -29,7 +31,7 @@ Shader "Hidden/AmplifyColor"
 		v2f vert(appdata_img v)
 		{
 			v2f o;
-			o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+			o.pos = UnityObjectToClipPos(v.vertex);
 			o.screenPos = ComputeScreenPos(o.pos);
 			o.uv01.xy = v.texcoord.xy;
 			o.uv01.zw = v.texcoord.xy;

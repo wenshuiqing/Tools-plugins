@@ -1,4 +1,6 @@
-﻿Shader "GOE/Outline/Blur"
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "GOE/Outline/Blur"
 {
 	Properties
 	{
@@ -40,7 +42,7 @@
 			v2f vert(a2v v)
 			{
 				v2f o;
-				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+				o.vertex = UnityObjectToClipPos(v.vertex);
 
 				o.uv = v.texcoord.xy;
 				o.offsets[0] = fixed2(_Offset.x, _Offset.y);

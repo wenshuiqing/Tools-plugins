@@ -1,0 +1,924 @@
+fileFormatVersion: 2
+guid: 3ea6cb0f49753e445ac43cada75ca1d2
+timeCreated: 1511416289
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 Head
+    100004: Bip001 L Calf
+    100006: Bip001 L Clavicle
+    100008: Bip001 L Finger0
+    100010: Bip001 L Finger01
+    100012: Bip001 L Finger1
+    100014: Bip001 L Finger11
+    100016: Bip001 L Finger2
+    100018: Bip001 L Finger21
+    100020: Bip001 L Foot
+    100022: Bip001 L Forearm
+    100024: Bip001 L Hand
+    100026: Bip001 L Thigh
+    100028: Bip001 L Toe0
+    100030: Bip001 L UpperArm
+    100032: Bip001 Neck
+    100034: Bip001 Pelvis
+    100036: Bip001 Prop1
+    100038: Bip001 Prop2
+    100040: Bip001 R Calf
+    100042: Bip001 R Clavicle
+    100044: Bip001 R Finger0
+    100046: Bip001 R Finger01
+    100048: Bip001 R Finger1
+    100050: Bip001 R Finger11
+    100052: Bip001 R Finger2
+    100054: Bip001 R Finger21
+    100056: Bip001 R Foot
+    100058: Bip001 R Forearm
+    100060: Bip001 R Hand
+    100062: Bip001 R Thigh
+    100064: Bip001 R Toe0
+    100066: Bip001 R UpperArm
+    100068: Bip001 Spine
+    100070: Bip001 Spine1
+    100072: body_f003
+    100074: Bone001
+    100076: Bone002
+    100078: Bone002(mirrored)(mirrored)
+    100080: Bone004
+    100082: Bone006
+    100084: Bone008
+    100086: Bone009
+    100088: Bone012
+    100090: Bone013
+    100092: Bone016
+    100094: Bone017
+    100096: //RootNode
+    100098: effect_facebones
+    100100: effect_headbones
+    100102: effect_leftelbowbones
+    100104: effect_leftfootbones
+    100106: effect_lefthandbones
+    100108: effect_leftkneetbones
+    100110: effect_rightelbowbones
+    100112: effect_rightfootbones
+    100114: effect_righthandbones
+    100116: effect_rightkneebones
+    100118: Group17994
+    100120: hair_001
+    100122: hair_002
+    100124: hair_003
+    100126: hair_004
+    100128: hair_005
+    100130: hair_006
+    100132: hair_007
+    100134: hair_008
+    100136: hair_009
+    100138: hair_010
+    100140: hair_011
+    100142: hair_011 1
+    100144: hair_012
+    100146: hair_019
+    100148: hair_020
+    100150: hair_021
+    100152: head_001
+    100154: head_002
+    100156: head_003
+    100158: head_004
+    100160: head_005
+    100162: head_006
+    100164: head_007
+    100166: head_008
+    100168: head_009
+    100170: head_010
+    100172: head_011
+    100174: head_012
+    100176: head_019
+    100178: head_020
+    100180: head_021
+    100182: head_f003
+    100184: mo_basi002_part003_1
+    100186: mo_role000_body_j001_1
+    100188: mo_role001_body_f001_1
+    100190: mo_role001_hair_f001_1
+    100192: Object006
+    100194: phiz_001
+    100196: phiz_002
+    100198: phiz_003
+    100200: phiz_004
+    100202: phiz_005
+    100204: phiz_006
+    100206: phiz_007
+    100208: phiz_008
+    100210: phiz_010
+    100212: phiz_011
+    100214: Point001
+    100216: unit_001
+    100218: Bip001 Footsteps
+    100220: Bip001 HeadNub
+    100222: Bip001 L Finger0Nub
+    100224: Bip001 L Finger1Nub
+    100226: Bip001 L Finger2Nub
+    100228: Bip001 L Toe0Nub
+    100230: Bip001 R Finger0Nub
+    100232: Bip001 R Finger1Nub
+    100234: Bip001 R Finger2Nub
+    100236: Bip001 R Toe0Nub
+    100238: Bone010
+    100240: Bone014
+    100242: Bone018
+    100244: expr011
+    100246: mo_basi001_part001_1
+    100248: MoR_C_expr001
+    100250: MoR_C_expr002
+    100252: MoR_C_expr003
+    100254: MoR_C_expr004
+    100256: MoR_C_expr005
+    100258: MoR_C_expr006
+    100260: MoR_C_expr007
+    100262: MoR_C_expr009
+    100264: MoR_C_expr010
+    100266: MoR_C_expr011
+    100268: MoR_C_GuofuMaowang
+    100270: MoR_C_Jersey
+    100272: MoR_C_Jersey 1
+    100274: MoR_C_LaichangRenzhe
+    100276: MoR_hair_Caca
+    100278: MoR_hair_Drip
+    100280: MoR_hair_Guiwu
+    100282: MoR_hair_Guofu
+    100284: MoR_hair_GuofuMaowang
+    100286: MoR_hair_Haiyue
+    100288: MoR_hair_Jingen
+    100290: MoR_hair_Jiumen
+    100292: MoR_hair_Kaluosi
+    100294: MoR_hair_Laichang
+    100296: MoR_hair_Luiz
+    100298: MoR_hair_Yuanyong
+    100300: MoR_hair_Zuozhi
+    100302: MoR_head_Caca
+    100304: MoR_head_Drip
+    100306: MoR_head_Guiwu
+    100308: MoR_head_Guofu
+    100310: MoR_head_Haiyue
+    100312: MoR_head_Jingen
+    100314: MoR_head_Jiumen
+    100316: MoR_head_Kaluosi
+    100318: MoR_head_Laichang
+    100320: MoR_head_LaichangRenzhe
+    100322: MoR_head_Luiz
+    100324: MoR_head_Yuanyong
+    100326: MoR_head_Zuozhi
+    100328: MoT_C_Glass01
+    100330: MoT_C_Glass02
+    100332: MoT_Kulou001
+    100334: MoR_hair_Katun
+    100336: MoR_hair_Mbaba
+    100338: MoR_head_Katun
+    100340: MoR_head_Mbaba
+    100342: MoT_C_glass03
+    100344: MoR_hair_Chainsaw
+    100346: MoR_hair_Doctor
+    100348: MoR_hair_Tank
+    100350: MoR_hair_Tower
+    100352: MoR_head_Chainsaw
+    100354: MoR_head_Doctor
+    100356: MoR_head_Tank
+    100358: MoR_head_Tower
+    100360: MoT_C_Glass04
+    100362: MaR_hair_MaWeiBlack01
+    100364: MaR_head_MaWei
+    100366: MoR_hair_FeiShi
+    100368: MoR_hair_Nan
+    100370: MoR_head_FeiShi
+    100372: MoR_head_Nan
+    100374: MoR_hair_Hu
+    100376: MoR_hair_WuBlack01
+    100378: MoR_head_Hu
+    100380: MoR_head_Wu
+    100382: MoR_hair_Christmas
+    100384: MoR_hair_Francis
+    100386: MoR_head_Christmas
+    100388: MoR_head_Francis
+    100390: MoT_C_Glass05
+    100392: MoR_hair_Beard
+    100394: MoR_head_Beard
+    100396: MoR_hair_Antonio
+    100398: MoR_hair_Boss
+    100400: MoR_hair_Julio
+    100402: MoR_hair_Mars
+    100404: MoR_hair_Mate
+    100406: MoR_head_Antonio
+    100408: MoR_head_Boss
+    100410: MoR_head_Julio
+    100412: MoR_head_Mars
+    100414: MoR_head_Mate
+    100416: MoT_C_Glass06
+    100418: MoT_C_KuLou001
+    100420: MoR_hair_Beacon
+    100422: MoR_hair_Curator
+    100424: MoR_hair_Pluto
+    100426: MoR_head_Beacon
+    100428: MoR_head_Curator
+    100430: MoR_head_Pluto
+    100432: MoT_C_Glass07
+    100434: MoT_C_Glass08
+    100436: MoR_CBody_LaichangRenzhe
+    100438: MoR_CHair_LaichangRenzhe
+    100440: MoR_CHead_LaichangRenzhe
+    100442: MoR_CPart_LaichangRenzhe
+    100444: MoR_CBody_LuizXiha
+    100446: MoR_CHair_LuizXiha
+    100448: MoR_CHead_LuizXiha
+    100450: MoR_CPart_LuizXiha
+    100452: Bone019
+    100454: Bone020
+    100456: Bone021
+    100458: Bone022
+    100460: effect_leftkneetbones 1
+    100462: effect_leftkneetbones 2
+    100464: effect_leftkneetbones 3
+    100466: effect_leftkneetbones 4
+    100468: effect_rightkneebones 1
+    100470: effect_rightkneebones 2
+    100472: effect_rightkneebones 3
+    100474: effect_rightkneebones 4
+    100476: MoR_hair_Yangyang
+    100478: MoR_head_Weiwei
+    100480: MoR_head_Yangyang
+    100482: MoT_C_Glass04 1
+    100484: Bone023
+    100486: Bone024
+    100488: MaR_hair_Salaheblack
+    100490: MaR_head_Salahe
+    100492: Bone025
+    100494: Bone026
+    100496: MoR_CBody_ChainsawWukong
+    100498: MoR_CBody_KonglongFrancis
+    100500: MoR_CBody_ProdigalXueren
+    100502: MoR_CHead_ChainsawWukong
+    100504: MoR_CHead_KonglongFrancis
+    100506: MoR_CHead_ProdigalXueren
+    100508: Bone027
+    100510: Bone029
+    400000: Bip001
+    400002: Bip001 Head
+    400004: Bip001 L Calf
+    400006: Bip001 L Clavicle
+    400008: Bip001 L Finger0
+    400010: Bip001 L Finger01
+    400012: Bip001 L Finger1
+    400014: Bip001 L Finger11
+    400016: Bip001 L Finger2
+    400018: Bip001 L Finger21
+    400020: Bip001 L Foot
+    400022: Bip001 L Forearm
+    400024: Bip001 L Hand
+    400026: Bip001 L Thigh
+    400028: Bip001 L Toe0
+    400030: Bip001 L UpperArm
+    400032: Bip001 Neck
+    400034: Bip001 Pelvis
+    400036: Bip001 Prop1
+    400038: Bip001 Prop2
+    400040: Bip001 R Calf
+    400042: Bip001 R Clavicle
+    400044: Bip001 R Finger0
+    400046: Bip001 R Finger01
+    400048: Bip001 R Finger1
+    400050: Bip001 R Finger11
+    400052: Bip001 R Finger2
+    400054: Bip001 R Finger21
+    400056: Bip001 R Foot
+    400058: Bip001 R Forearm
+    400060: Bip001 R Hand
+    400062: Bip001 R Thigh
+    400064: Bip001 R Toe0
+    400066: Bip001 R UpperArm
+    400068: Bip001 Spine
+    400070: Bip001 Spine1
+    400072: body_f003
+    400074: Bone001
+    400076: Bone002
+    400078: Bone002(mirrored)(mirrored)
+    400080: Bone004
+    400082: Bone006
+    400084: Bone008
+    400086: Bone009
+    400088: Bone012
+    400090: Bone013
+    400092: Bone016
+    400094: Bone017
+    400096: //RootNode
+    400098: effect_facebones
+    400100: effect_headbones
+    400102: effect_leftelbowbones
+    400104: effect_leftfootbones
+    400106: effect_lefthandbones
+    400108: effect_leftkneetbones
+    400110: effect_rightelbowbones
+    400112: effect_rightfootbones
+    400114: effect_righthandbones
+    400116: effect_rightkneebones
+    400118: Group17994
+    400120: hair_001
+    400122: hair_002
+    400124: hair_003
+    400126: hair_004
+    400128: hair_005
+    400130: hair_006
+    400132: hair_007
+    400134: hair_008
+    400136: hair_009
+    400138: hair_010
+    400140: hair_011
+    400142: hair_011 1
+    400144: hair_012
+    400146: hair_019
+    400148: hair_020
+    400150: hair_021
+    400152: head_001
+    400154: head_002
+    400156: head_003
+    400158: head_004
+    400160: head_005
+    400162: head_006
+    400164: head_007
+    400166: head_008
+    400168: head_009
+    400170: head_010
+    400172: head_011
+    400174: head_012
+    400176: head_019
+    400178: head_020
+    400180: head_021
+    400182: head_f003
+    400184: mo_basi002_part003_1
+    400186: mo_role000_body_j001_1
+    400188: mo_role001_body_f001_1
+    400190: mo_role001_hair_f001_1
+    400192: Object006
+    400194: phiz_001
+    400196: phiz_002
+    400198: phiz_003
+    400200: phiz_004
+    400202: phiz_005
+    400204: phiz_006
+    400206: phiz_007
+    400208: phiz_008
+    400210: phiz_010
+    400212: phiz_011
+    400214: Point001
+    400216: unit_001
+    400218: Bip001 Footsteps
+    400220: Bip001 HeadNub
+    400222: Bip001 L Finger0Nub
+    400224: Bip001 L Finger1Nub
+    400226: Bip001 L Finger2Nub
+    400228: Bip001 L Toe0Nub
+    400230: Bip001 R Finger0Nub
+    400232: Bip001 R Finger1Nub
+    400234: Bip001 R Finger2Nub
+    400236: Bip001 R Toe0Nub
+    400238: Bone010
+    400240: Bone014
+    400242: Bone018
+    400244: expr011
+    400246: mo_basi001_part001_1
+    400248: MoR_C_expr001
+    400250: MoR_C_expr002
+    400252: MoR_C_expr003
+    400254: MoR_C_expr004
+    400256: MoR_C_expr005
+    400258: MoR_C_expr006
+    400260: MoR_C_expr007
+    400262: MoR_C_expr009
+    400264: MoR_C_expr010
+    400266: MoR_C_expr011
+    400268: MoR_C_GuofuMaowang
+    400270: MoR_C_Jersey
+    400272: MoR_C_Jersey 1
+    400274: MoR_C_LaichangRenzhe
+    400276: MoR_hair_Caca
+    400278: MoR_hair_Drip
+    400280: MoR_hair_Guiwu
+    400282: MoR_hair_Guofu
+    400284: MoR_hair_GuofuMaowang
+    400286: MoR_hair_Haiyue
+    400288: MoR_hair_Jingen
+    400290: MoR_hair_Jiumen
+    400292: MoR_hair_Kaluosi
+    400294: MoR_hair_Laichang
+    400296: MoR_hair_Luiz
+    400298: MoR_hair_Yuanyong
+    400300: MoR_hair_Zuozhi
+    400302: MoR_head_Caca
+    400304: MoR_head_Drip
+    400306: MoR_head_Guiwu
+    400308: MoR_head_Guofu
+    400310: MoR_head_Haiyue
+    400312: MoR_head_Jingen
+    400314: MoR_head_Jiumen
+    400316: MoR_head_Kaluosi
+    400318: MoR_head_Laichang
+    400320: MoR_head_LaichangRenzhe
+    400322: MoR_head_Luiz
+    400324: MoR_head_Yuanyong
+    400326: MoR_head_Zuozhi
+    400328: MoT_C_Glass01
+    400330: MoT_C_Glass02
+    400332: MoT_Kulou001
+    400334: MoR_hair_Katun
+    400336: MoR_hair_Mbaba
+    400338: MoR_head_Katun
+    400340: MoR_head_Mbaba
+    400342: MoT_C_glass03
+    400344: MoR_hair_Chainsaw
+    400346: MoR_hair_Doctor
+    400348: MoR_hair_Tank
+    400350: MoR_hair_Tower
+    400352: MoR_head_Chainsaw
+    400354: MoR_head_Doctor
+    400356: MoR_head_Tank
+    400358: MoR_head_Tower
+    400360: MoT_C_Glass04
+    400362: MaR_hair_MaWeiBlack01
+    400364: MaR_head_MaWei
+    400366: MoR_hair_FeiShi
+    400368: MoR_hair_Nan
+    400370: MoR_head_FeiShi
+    400372: MoR_head_Nan
+    400374: MoR_hair_Hu
+    400376: MoR_hair_WuBlack01
+    400378: MoR_head_Hu
+    400380: MoR_head_Wu
+    400382: MoR_hair_Christmas
+    400384: MoR_hair_Francis
+    400386: MoR_head_Christmas
+    400388: MoR_head_Francis
+    400390: MoT_C_Glass05
+    400392: MoR_hair_Beard
+    400394: MoR_head_Beard
+    400396: MoR_hair_Antonio
+    400398: MoR_hair_Boss
+    400400: MoR_hair_Julio
+    400402: MoR_hair_Mars
+    400404: MoR_hair_Mate
+    400406: MoR_head_Antonio
+    400408: MoR_head_Boss
+    400410: MoR_head_Julio
+    400412: MoR_head_Mars
+    400414: MoR_head_Mate
+    400416: MoT_C_Glass06
+    400418: MoT_C_KuLou001
+    400420: MoR_hair_Beacon
+    400422: MoR_hair_Curator
+    400424: MoR_hair_Pluto
+    400426: MoR_head_Beacon
+    400428: MoR_head_Curator
+    400430: MoR_head_Pluto
+    400432: MoT_C_Glass07
+    400434: MoT_C_Glass08
+    400436: MoR_CBody_LaichangRenzhe
+    400438: MoR_CHair_LaichangRenzhe
+    400440: MoR_CHead_LaichangRenzhe
+    400442: MoR_CPart_LaichangRenzhe
+    400444: MoR_CBody_LuizXiha
+    400446: MoR_CHair_LuizXiha
+    400448: MoR_CHead_LuizXiha
+    400450: MoR_CPart_LuizXiha
+    400452: Bone019
+    400454: Bone020
+    400456: Bone021
+    400458: Bone022
+    400460: effect_leftkneetbones 1
+    400462: effect_leftkneetbones 2
+    400464: effect_leftkneetbones 3
+    400466: effect_leftkneetbones 4
+    400468: effect_rightkneebones 1
+    400470: effect_rightkneebones 2
+    400472: effect_rightkneebones 3
+    400474: effect_rightkneebones 4
+    400476: MoR_hair_Yangyang
+    400478: MoR_head_Weiwei
+    400480: MoR_head_Yangyang
+    400482: MoT_C_Glass04 1
+    400484: Bone023
+    400486: Bone024
+    400488: MaR_hair_Salaheblack
+    400490: MaR_head_Salahe
+    400492: Bone025
+    400494: Bone026
+    400496: MoR_CBody_ChainsawWukong
+    400498: MoR_CBody_KonglongFrancis
+    400500: MoR_CBody_ProdigalXueren
+    400502: MoR_CHead_ChainsawWukong
+    400504: MoR_CHead_KonglongFrancis
+    400506: MoR_CHead_ProdigalXueren
+    400508: Bone027
+    400510: Bone029
+    2300000: hair_020
+    3300000: hair_020
+    4300000: hair_010
+    4300002: head_010
+    4300004: hair_011
+    4300006: hair_002
+    4300008: hair_003
+    4300010: hair_004
+    4300012: hair_005
+    4300014: hair_006
+    4300016: hair_007
+    4300018: hair_008
+    4300020: hair_009
+    4300022: hair_012
+    4300024: head_004
+    4300026: head_005
+    4300028: head_006
+    4300030: head_007
+    4300032: head_008
+    4300034: head_009
+    4300036: phiz_001
+    4300038: phiz_002
+    4300040: phiz_003
+    4300042: phiz_004
+    4300044: phiz_005
+    4300046: phiz_006
+    4300048: unit_001
+    4300050: Object006
+    4300052: Group17994
+    4300054: phiz_007
+    4300056: phiz_008
+    4300058: phiz_010
+    4300060: phiz_011
+    4300062: mo_role000_body_j001_1
+    4300064: mo_role001_hair_f001_1
+    4300066: mo_basi002_part003_1
+    4300068: mo_role001_body_f001_1
+    4300070: head_019
+    4300072: hair_020
+    4300074: head_020
+    4300076: head_021
+    4300078: head_f003
+    4300080: body_f003
+    4300082: hair_001
+    4300084: hair_011
+    4300086: head_011
+    4300088: hair_021
+    4300090: head_001
+    4300092: head_002
+    4300094: head_003
+    4300096: head_012
+    4300098: hair_019
+    4300100: expr011
+    4300102: mo_basi001_part001_1
+    4300104: MoR_hair_Guiwu
+    4300106: MoR_head_Guiwu
+    4300108: MoR_head_Guofu
+    4300110: MoR_hair_Jingen
+    4300112: MoR_head_Jingen
+    4300114: MoR_hair_Kaluosi
+    4300116: MoR_head_Kaluosi
+    4300118: MoR_hair_Yuanyong
+    4300120: MoR_hair_Jiumen
+    4300122: MoR_hair_Haiyue
+    4300124: MoR_hair_Zuozhi
+    4300126: MoR_head_Yuanyong
+    4300128: MoR_head_Jiumen
+    4300130: MoR_head_Haiyue
+    4300132: MoR_head_Zuozhi
+    4300134: MoR_C_expr001
+    4300136: MoR_C_expr002
+    4300138: MoR_C_expr003
+    4300140: MoR_C_expr004
+    4300142: MoR_C_expr005
+    4300144: MoR_C_expr006
+    4300146: MoR_C_Jersey
+    4300148: MoT_Kulou001
+    4300150: MoR_C_expr007
+    4300152: MoR_C_expr009
+    4300154: MoR_C_expr010
+    4300156: MoR_C_Jersey
+    4300158: MoR_hair_GuofuMaowang
+    4300160: MoT_C_Glass02
+    4300162: MoR_C_GuofuMaowang
+    4300164: MoR_hair_Caca
+    4300166: MoR_head_Caca
+    4300168: MoR_hair_Luiz
+    4300170: MoR_head_Luiz
+    4300172: MoR_head_Drip
+    4300174: MoR_head_LaichangRenzhe
+    4300176: MoR_C_LaichangRenzhe
+    4300178: MoR_hair_Guofu
+    4300180: MoR_hair_Laichang
+    4300182: MoR_head_Laichang
+    4300184: MoR_hair_Drip
+    4300186: MoR_C_expr011
+    4300188: MoT_C_Glass01
+    4300190: MoR_head_Mbaba
+    4300192: MoR_hair_Mbaba
+    4300194: MoR_head_Katun
+    4300196: MoR_hair_Katun
+    4300198: MoT_C_glass03
+    4300200: MoR_head_Chainsaw
+    4300202: MoR_hair_Chainsaw
+    4300204: MoR_head_Doctor
+    4300206: MoT_C_Glass04
+    4300208: MoR_hair_Doctor
+    4300210: MoR_head_Tank
+    4300212: MoR_hair_Tank
+    4300214: MoR_head_Tower
+    4300216: MoR_hair_Tower
+    4300218: MoR_head_FeiShi
+    4300220: MoR_hair_FeiShi
+    4300222: MoR_head_Nan
+    4300224: MoR_hair_Nan
+    4300226: MaR_hair_MaWeiBlack01
+    4300228: MaR_head_MaWei
+    4300230: MoR_head_Hu
+    4300232: MoR_hair_Hu
+    4300234: MoR_head_Wu
+    4300236: MoR_hair_WuBlack01
+    4300238: MoT_C_Glass05
+    4300240: MoR_hair_Christmas
+    4300242: MoR_head_Christmas
+    4300244: MoR_head_Francis
+    4300246: MoR_hair_Francis
+    4300248: MoR_head_Beard
+    4300250: MoR_hair_Beard
+    4300252: MoR_hair_Mars
+    4300254: MoR_head_Mars
+    4300256: MoR_hair_Mate
+    4300258: MoT_C_Glass06
+    4300260: MoR_head_Mate
+    4300262: MoR_hair_Julio
+    4300264: MoR_head_Julio
+    4300266: MoR_hair_Antonio
+    4300268: MoR_head_Antonio
+    4300270: MoR_head_Boss
+    4300272: MoR_hair_Boss
+    4300274: MoT_C_KuLou001
+    4300276: MoR_hair_Curator
+    4300278: MoT_C_Glass08
+    4300280: MoR_head_Curator
+    4300282: MoR_hair_Beacon
+    4300284: MoR_head_Beacon
+    4300286: MoT_C_Glass07
+    4300288: MoR_hair_Pluto
+    4300290: MoR_head_Pluto
+    4300292: MoR_CBody_LaichangRenzhe
+    4300294: MoR_CHair_LaichangRenzhe
+    4300296: MoR_CHead_LaichangRenzhe
+    4300298: MoR_CHair_LuizXiha
+    4300300: MoR_CBody_LuizXiha
+    4300302: MoR_CHead_LuizXiha
+    4300304: MoR_CPart_LuizXiha
+    4300306: MoR_head_Weiwei
+    4300308: MoT_C_Glass04
+    4300310: MoR_hair_Yangyang
+    4300312: MoR_head_Yangyang
+    4300314: MaR_head_Salahe
+    4300316: MaR_hair_Salaheblack
+    4300318: MoR_CHead_KonglongFrancis
+    4300320: MoR_CBody_KonglongFrancis
+    4300322: MoR_CHead_ProdigalXueren
+    4300324: MoR_CBody_ProdigalXueren
+    4300326: MoR_CBody_ChainsawWukong
+    4300328: MoR_CHead_ChainsawWukong
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: body_f003
+    13700002: Group17994
+    13700004: hair_001
+    13700006: hair_002
+    13700008: hair_003
+    13700010: hair_004
+    13700012: hair_005
+    13700014: hair_006
+    13700016: hair_007
+    13700018: hair_008
+    13700020: hair_009
+    13700022: hair_010
+    13700024: hair_011
+    13700026: hair_011 1
+    13700028: hair_012
+    13700030: hair_019
+    13700032: hair_021
+    13700034: head_001
+    13700036: head_002
+    13700038: head_003
+    13700040: head_004
+    13700042: head_005
+    13700044: head_006
+    13700046: head_007
+    13700048: head_008
+    13700050: head_009
+    13700052: head_010
+    13700054: head_011
+    13700056: head_012
+    13700058: head_019
+    13700060: head_020
+    13700062: head_021
+    13700064: head_f003
+    13700066: mo_basi002_part003_1
+    13700068: mo_role000_body_j001_1
+    13700070: mo_role001_body_f001_1
+    13700072: mo_role001_hair_f001_1
+    13700074: Object006
+    13700076: phiz_001
+    13700078: phiz_002
+    13700080: phiz_003
+    13700082: phiz_004
+    13700084: phiz_005
+    13700086: phiz_006
+    13700088: phiz_007
+    13700090: phiz_008
+    13700092: phiz_010
+    13700094: phiz_011
+    13700096: unit_001
+    13700098: hair_020
+    13700100: expr011
+    13700102: mo_basi001_part001_1
+    13700104: MoR_C_expr001
+    13700106: MoR_C_expr002
+    13700108: MoR_C_expr003
+    13700110: MoR_C_expr004
+    13700112: MoR_C_expr005
+    13700114: MoR_C_expr006
+    13700116: MoR_C_expr007
+    13700118: MoR_C_expr009
+    13700120: MoR_C_expr010
+    13700122: MoR_C_expr011
+    13700124: MoR_C_GuofuMaowang
+    13700126: MoR_C_Jersey
+    13700128: MoR_C_Jersey 1
+    13700130: MoR_C_LaichangRenzhe
+    13700132: MoR_hair_Caca
+    13700134: MoR_hair_Drip
+    13700136: MoR_hair_Guiwu
+    13700138: MoR_hair_Guofu
+    13700140: MoR_hair_GuofuMaowang
+    13700142: MoR_hair_Haiyue
+    13700144: MoR_hair_Jingen
+    13700146: MoR_hair_Jiumen
+    13700148: MoR_hair_Kaluosi
+    13700150: MoR_hair_Laichang
+    13700152: MoR_hair_Luiz
+    13700154: MoR_hair_Yuanyong
+    13700156: MoR_hair_Zuozhi
+    13700158: MoR_head_Caca
+    13700160: MoR_head_Drip
+    13700162: MoR_head_Guiwu
+    13700164: MoR_head_Guofu
+    13700166: MoR_head_Haiyue
+    13700168: MoR_head_Jingen
+    13700170: MoR_head_Jiumen
+    13700172: MoR_head_Kaluosi
+    13700174: MoR_head_Laichang
+    13700176: MoR_head_LaichangRenzhe
+    13700178: MoR_head_Luiz
+    13700180: MoR_head_Yuanyong
+    13700182: MoR_head_Zuozhi
+    13700184: MoT_C_Glass01
+    13700186: MoT_C_Glass02
+    13700188: MoT_Kulou001
+    13700190: MoR_hair_Katun
+    13700192: MoR_hair_Mbaba
+    13700194: MoR_head_Katun
+    13700196: MoR_head_Mbaba
+    13700198: MoT_C_glass03
+    13700200: MoR_hair_Chainsaw
+    13700202: MoR_hair_Doctor
+    13700204: MoR_hair_Tank
+    13700206: MoR_hair_Tower
+    13700208: MoR_head_Chainsaw
+    13700210: MoR_head_Doctor
+    13700212: MoR_head_Tank
+    13700214: MoR_head_Tower
+    13700216: MoT_C_Glass04
+    13700218: MaR_hair_MaWeiBlack01
+    13700220: MaR_head_MaWei
+    13700222: MoR_hair_FeiShi
+    13700224: MoR_hair_Nan
+    13700226: MoR_head_FeiShi
+    13700228: MoR_head_Nan
+    13700230: MoR_hair_Hu
+    13700232: MoR_hair_WuBlack01
+    13700234: MoR_head_Hu
+    13700236: MoR_head_Wu
+    13700238: MoR_hair_Christmas
+    13700240: MoR_hair_Francis
+    13700242: MoR_head_Christmas
+    13700244: MoR_head_Francis
+    13700246: MoT_C_Glass05
+    13700248: MoR_hair_Beard
+    13700250: MoR_head_Beard
+    13700252: MoR_hair_Antonio
+    13700254: MoR_hair_Boss
+    13700256: MoR_hair_Julio
+    13700258: MoR_hair_Mars
+    13700260: MoR_hair_Mate
+    13700262: MoR_head_Antonio
+    13700264: MoR_head_Boss
+    13700266: MoR_head_Julio
+    13700268: MoR_head_Mars
+    13700270: MoR_head_Mate
+    13700272: MoT_C_Glass06
+    13700274: MoT_C_KuLou001
+    13700276: MoR_hair_Beacon
+    13700278: MoR_hair_Curator
+    13700280: MoR_hair_Pluto
+    13700282: MoR_head_Beacon
+    13700284: MoR_head_Curator
+    13700286: MoR_head_Pluto
+    13700288: MoT_C_Glass07
+    13700290: MoT_C_Glass08
+    13700292: MoR_CBody_LaichangRenzhe
+    13700294: MoR_CHair_LaichangRenzhe
+    13700296: MoR_CHead_LaichangRenzhe
+    13700298: MoR_CBody_LuizXiha
+    13700300: MoR_CHair_LuizXiha
+    13700302: MoR_CHead_LuizXiha
+    13700304: MoR_CPart_LuizXiha
+    13700306: MoR_hair_Yangyang
+    13700308: MoR_head_Weiwei
+    13700310: MoR_head_Yangyang
+    13700312: MoT_C_Glass04 1
+    13700314: MaR_hair_Salaheblack
+    13700316: MaR_head_Salahe
+    13700318: MoR_CBody_ChainsawWukong
+    13700320: MoR_CBody_KonglongFrancis
+    13700322: MoR_CBody_ProdigalXueren
+    13700324: MoR_CHead_ChainsawWukong
+    13700326: MoR_CHead_KonglongFrancis
+    13700328: MoR_CHead_ProdigalXueren
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

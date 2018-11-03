@@ -23,7 +23,7 @@ namespace PostFX
 		[Tooltip("Enable this option if you need the effect to keep the alpha channel from the original render (some effects like Glow will need it). Disable it otherwise for better performances.")]
 		public bool PreserveAlpha = false;
 
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.ChromaticAberration;
             CreateMaterial();

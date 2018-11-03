@@ -33,7 +33,7 @@ namespace PostFX
             }
         }
 
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.FX_EarthQuake;
             CreateMaterial();
@@ -72,6 +72,11 @@ namespace PostFX
                 Graphics.Blit(source, destination, material);
             }
 
+        }
+
+        public override bool InValidQuality()
+        {
+            return false;
         }
 
     }

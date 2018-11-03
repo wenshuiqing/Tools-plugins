@@ -1,4 +1,4 @@
-﻿// Colorful FX - Unity Asset
+// Colorful FX - Unity Asset
 // Copyright (c) 2015 - Thomas Hourdel
 // http://www.thomashourdel.com
 using UnityEngine;
@@ -32,7 +32,7 @@ namespace PostFX
         [Range(0.01f, 2f), Tooltip("Helps avoid screen streching on borders when working with heavy distortions.")]
         public float Scale = 0.8f;
 
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.LensDistortionBlur;
             CreateMaterial();
@@ -53,9 +53,25 @@ namespace PostFX
 
         public override void PreProcess(RenderTexture source, RenderTexture destination)
         {
-            int samples = Quality == QualityPreset.Custom ? Samples : (int)Quality;
-            material.SetVector("_Params", new Vector4(samples, Distortion / samples, CubicDistortion / samples, Scale));
-            Graphics.Blit(source, destination, material);
+            if (material == null)
+            {
+                CreateMaterial();
+            }
+            if (material != null)
+            {
+                if (EarlyOutIfNotSupported(source, destination))
+                {
+                    return;
+                }
+                int samples = Quality == QualityPreset.Custom ? Samples : (int)Quality;
+                material.SetVector("_Params", new Vector4(samples, Distortion / samples, CubicDistortion / samples, Scale));
+                Graphics.Blit(source, destination, material);
+            }
+        }
+
+        public override bool InValidQuality()
+        {
+            return false;
         }
 
         public override void ToParam(object[] o)

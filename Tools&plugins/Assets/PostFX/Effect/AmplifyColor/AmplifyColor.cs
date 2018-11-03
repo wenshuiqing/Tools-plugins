@@ -25,7 +25,7 @@ namespace PostFX
                 }
             }
         }
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.AmplifyColor;
             CreateMaterial();

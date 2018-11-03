@@ -9,7 +9,7 @@ namespace PostFX
     public class ScreenFlip : PostEffectBase
     {
         // Use this for initialization
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.ScreenFlip;
             CreateMaterial();
@@ -29,6 +29,11 @@ namespace PostFX
                 }
                 Graphics.Blit(source, destination, material);
             }
+        }
+
+        public override bool InValidQuality()
+        {
+            return false;
         }
 
         protected override void CreateMaterial()

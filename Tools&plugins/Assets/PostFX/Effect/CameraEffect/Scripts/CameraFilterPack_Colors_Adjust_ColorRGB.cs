@@ -36,7 +36,7 @@ namespace PostFX
             }
         }
 
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.Colors_Adjust_ColorRGB;
             CreateMaterial();
@@ -76,6 +76,11 @@ namespace PostFX
 
             }
 
+        }
+
+        public override bool InValidQuality()
+        {
+            return false;
         }
 
     }

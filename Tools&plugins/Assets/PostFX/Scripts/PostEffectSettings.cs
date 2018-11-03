@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -130,9 +130,11 @@ namespace PostFX
         [SerializeField]
         private SpiritPressure spiritPressure = new SpiritPressure();
 
+        List<PostEffectBase> list = new List<PostEffectBase>();
         public List<PostEffectBase> Initialization()
         {
-            List<PostEffectBase> list = new List<PostEffectBase>();
+            list.Clear();
+
             list.Add(bloom);
             list.Add(screenGlow);
             list.Add(frameFadeout);

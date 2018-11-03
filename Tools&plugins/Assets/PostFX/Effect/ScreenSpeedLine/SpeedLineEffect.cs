@@ -45,7 +45,7 @@ namespace PostFX
             }
         }
 
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.ScreenSpeedLine;
             CreateMaterial();
@@ -95,9 +95,9 @@ namespace PostFX
             else Graphics.Blit(source, destination);
         }
 
-        public override void Dispose()
+        public override void OnDispose()
         {
-            base.Dispose();
+            base.OnDispose();
         }
 
         #endregion

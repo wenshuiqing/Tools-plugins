@@ -35,7 +35,7 @@ namespace PostFX
             }
         }
 
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.TV_WideScreenCircle;
             CreateMaterial();
@@ -73,5 +73,9 @@ namespace PostFX
             }
         }
 
+        public override bool InValidQuality()
+        {
+            return false;
+        }
     }
 }

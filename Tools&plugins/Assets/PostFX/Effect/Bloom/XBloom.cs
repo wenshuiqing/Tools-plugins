@@ -13,6 +13,12 @@ namespace PostFX
         [Range(0f, 2f), Tooltip("This is mIntensity")]
         public float Intensity = 0.3f;
 
+        [Range(0.25f, 5.5f), Tooltip("This is blurSize")]
+        public float blurSize = 1f;
+        
+        [Range(1, 2)]
+        public int blurIterations = 1;
+
         const string strParameter = "_Parameter";
         const string strBloom = "_Bloom";
 
@@ -29,7 +35,7 @@ namespace PostFX
             }
         }
 
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.Bloom;
             CreateMaterial();
@@ -41,7 +47,7 @@ namespace PostFX
             {
                 CreateMaterial();
             }
-            if (material != null)// && mGlowEnable)
+            if (material != null)
             {
                 if (EarlyOutIfNotSupported(source, destination))
                 {
@@ -49,11 +55,17 @@ namespace PostFX
                 }
                 RenderTexture tempRtA = RenderTexturePool.Get(Screen.width / 4, Screen.height / 4, 0, RenderTextureFormat.ARGB32);
                 RenderTexture tempRtB = RenderTexturePool.Get(Screen.width / 4, Screen.height / 4, 0, RenderTextureFormat.ARGB32);
-                material.SetVector(strParameter, new Vector4(0.0f, 0.0f, Threshhold, Intensity));
+                material.SetVector(strParameter, new Vector4(blurSize, 0.0f, Threshhold, Intensity));
 
                 Graphics.Blit(source, tempRtA, material, 1);
-                Graphics.Blit(tempRtA, tempRtB, material, 2);
-                Graphics.Blit(tempRtB, tempRtA, material, 3);
+
+                for (int i = 0; i < blurIterations; ++i)
+                {
+                    material.SetVector(strParameter, new Vector4(blurSize + i, 0.0f, Threshhold, Intensity));
+
+                    Graphics.Blit(tempRtA, tempRtB, material, 2);
+                    Graphics.Blit(tempRtB, tempRtA, material, 3);
+                }
 
                 material.SetTexture(strBloom, tempRtA);
                 Graphics.Blit(source, destination, material, 0);

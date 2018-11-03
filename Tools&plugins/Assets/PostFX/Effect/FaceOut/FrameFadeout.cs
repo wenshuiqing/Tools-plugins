@@ -20,7 +20,7 @@ namespace PostFX
         private bool m_isRenderFadeTexture = false;
 
 
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.FrameFadeout;
             base.shader = null;

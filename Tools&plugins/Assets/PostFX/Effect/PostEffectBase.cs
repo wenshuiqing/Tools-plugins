@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -9,7 +9,6 @@ namespace PostFX
     [Serializable]
     public class PostEffectBase
     {
-        public static Camera camera;
         protected Shader shader;
         protected Material material;
 
@@ -20,7 +19,7 @@ namespace PostFX
         public EffectType et;
 
 
-        public virtual void Enable() { }
+        public virtual void OnEnable() { }
 
         public virtual void Update() { }
 
@@ -38,10 +37,33 @@ namespace PostFX
         }
         public virtual void PreProcess(RenderTexture src, RenderTexture dst) { }
 
-        public virtual void Dispose()
+        public virtual bool InValidQuality()
         {
-            shader = null;
-            material = null;
+#if !RES_EDITOR       
+            bool invalidQ = true;
+            return invalidQ;
+#else
+            return false;
+#endif
+        }
+
+        public virtual void OnDispose()
+        {
+            if (shader != null)
+            {
+                shader = null;
+            }
+            if (material != null)
+            {
+#if UNITY_EDITOR
+                Material.DestroyImmediate(material);
+
+#else
+                Material.Destroy(material);
+#endif
+                // material = null;
+            }
+
         }
 
         public virtual void ToParam(object[] o)

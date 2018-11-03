@@ -33,7 +33,7 @@ namespace PostFX
                 }
             }
         }
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.Blend2Camera_Color;
             CreateMaterial();

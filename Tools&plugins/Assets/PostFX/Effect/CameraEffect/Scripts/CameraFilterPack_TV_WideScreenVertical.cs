@@ -35,7 +35,7 @@ namespace PostFX
             }
         }
 
-        public override void Enable()
+        public override void OnEnable()
         {
             et = EffectType.TV_WideScreenVertical;
             CreateMaterial();
