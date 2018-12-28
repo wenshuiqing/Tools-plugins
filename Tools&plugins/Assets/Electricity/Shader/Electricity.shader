@@ -2,7 +2,7 @@
 
 // Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
-Shader "GOE/Electricity"
+Shader "ZHT/Electricity"
 {
 	Properties
 	{

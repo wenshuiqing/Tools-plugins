@@ -1,6 +1,6 @@
 // Upgrade NOTE: replaced 'UNITY_INSTANCE_ID' with 'UNITY_VERTEX_INPUT_INSTANCE_ID'
 
-Shader "SimplestInstancedShader"
+Shader "ZHT/SimplestInstancedShader"
 {
 	Properties
 	{
@@ -50,7 +50,7 @@ Shader "SimplestInstancedShader"
 	fixed4 frag(v2f i) : SV_Target
 	{
 		UNITY_SETUP_INSTANCE_ID(i);
-	return UNITY_ACCESS_INSTANCED_PROP(_Color);
+		return UNITY_ACCESS_INSTANCED_PROP(_Color);
 	}
 		ENDCG
 	}

@@ -1,6 +1,6 @@
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Taecg/Hair/HairPBR"{
+Shader "ZHT/HairPBR"{
 	Properties{
 	_Color("Color", Color) = (1,1,1,1)
 	_MainTex("Base Color", 2D) = "white"{}
@@ -197,7 +197,7 @@ Shader "Taecg/Hair/HairPBR"{
 				ENDCG
 			}
 			
-			//Í¸Ã÷´¦Àí
+			//é€æ˜å¤„ç†
 			Pass{
 				Name "FORWARD"
 				Tags{"LightMode" = "ForwardBase"}

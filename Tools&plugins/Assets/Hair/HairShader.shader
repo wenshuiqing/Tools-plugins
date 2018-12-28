@@ -1,7 +1,7 @@
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
 
-Shader "ShaderMe/HairShader" {
+Shader "ZHT/HairShader1" {
     Properties {
 		_CutOff("Cutoff",Range(0, 1)) = 0.5
         _Color ("Color", Color) = (0.5,0.5,0.5,1)

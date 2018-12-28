@@ -1,4 +1,4 @@
-﻿Shader "HairShader"
+Shader "ZHT/HairShader"
 {
 	Properties
 	{

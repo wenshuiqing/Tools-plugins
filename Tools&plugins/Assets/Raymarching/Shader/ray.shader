@@ -1,4 +1,4 @@
-Shader "Zht/raymarching"
+Shader "ZHT/raymarching"
 {
 	Properties
 	{

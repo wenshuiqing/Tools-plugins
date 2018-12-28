@@ -1,7 +1,7 @@
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
 // Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-Shader "Shader Forge/skyTest2" {
+Shader "ZHT/skyTest2" {
     Properties {
         _HorizonSharpness ("Horizon Sharpness", Float ) = 16
         _StarPosition ("StarPosition", Float ) = 5
@@ -166,27 +166,27 @@ Shader "Shader Forge/skyTest2" {
 				return n;
 			}
 
-			//Ïàº¯Êı
+			//ç›¸å‡½æ•°
 			float HenyeyGreenstein(float cosine)
 			{
 				float g2 = _HGCoeff * _HGCoeff;
 				return 0.5 * (1 - g2) / pow(1 + g2 - 2 * _HGCoeff * cosine, 1.5);
 			}
 
-			//ÄÜÁ¿Ë¥¼õ¹«Ê½
+			//èƒ½é‡è¡°å‡å…¬å¼
 			float Beer(float depth)
 			{
 				return exp(-_Extinct * depth);
 			}
 
-			//ÄÜÁ¿2´ÎË¥¼õ¹«Ê½
+			//èƒ½é‡2æ¬¡è¡°å‡å…¬å¼
 			float BeerPowder(float depth)
 			{
 				return exp(-_Extinct * depth) * (1 - exp(-_Extinct * 2 * depth));
 			}
 
 
-			//¼ÆËã¹âÑ§Ë¥¼õ
+			//è®¡ç®—å…‰å­¦è¡°å‡
 			float MarchLight(float3 pos, float rand)
 			{
 				float3 light = _WorldSpaceLightPos0.xyz;
@@ -213,7 +213,7 @@ Shader "Shader Forge/skyTest2" {
 
 				float dist0 = _Altitude0 / ray.y;
 				float dist1 = _Altitude1 / ray.y;
-				float stride = (dist1 - dist0) / samples;//²ÉÑù²½³¤
+				float stride = (dist1 - dist0) / samples;//é‡‡æ ·æ­¥é•¿
 
 				if (ray.y < 0.01 || dist0 >= _FarDist) return fixed4(sky, 1);
 
@@ -223,7 +223,7 @@ Shader "Shader Forge/skyTest2" {
 				float2 uv = iuv + _Time.x;
 				float offs = UVRandom(uv) * stride;
 
-				float3 pos = _WorldSpaceCameraPos + ray * (dist0 + offs);//Æğµã
+				float3 pos = _WorldSpaceCameraPos + ray * (dist0 + offs);//èµ·ç‚¹
 				float3 acc = 0;
 
 				float depth = 0;
@@ -278,64 +278,64 @@ Shader "Shader Forge/skyTest2" {
                 float3 normalwPos = normalize(i.posWorld.xyz);
                 float2 wRB = normalwPos.rb;
                 float wG = saturate(normalwPos.g);
-                float2 uv = (wRB+(wRB*(1.0 - wG)));//¼ÆËãUV
+                float2 uv = (wRB+(wRB*(1.0 - wG)));//è®¡ç®—UV
 
                 float4 _StarsTexture_var = tex2D(_StarsTexture,TRANSFORM_TEX(uv, _StarsTexture));
 
-				//ÈÕêĞ
+				//æ—¥æ™·
                 float cycle = smoothstep( 0.4, 0.75, 0.5*dot(lightDirection,float3(0,1,0))+0.5 );
 
 			
-				//»ìºÏ°×ÌìºÍ»Æ»èÌì¿ÕÉ«
+				//æ··åˆç™½å¤©å’Œé»„æ˜å¤©ç©ºè‰²
 				float3 blendDusk_DayTop = lerp(_Dusk.rgb,_DayTop.rgb, cycle);
 
 				float3 blendDusk_Night = lerp(_Night.rgb, _Dusk.rgb, cycle);
 
 				float3 star = _StarsTexture_var*pow(wG, _StarPosition)*_StarIntensity;
 
-				//»ìºÏÌì¿ÕÑÕÉ«
+				//æ··åˆå¤©ç©ºé¢œè‰²
 				float3 skyColor = lerp(star + blendDusk_Night,blendDusk_DayTop, cycle);
 				
 
-				//»ìºÏÔÆÑÕÉ«
+				//æ··åˆäº‘é¢œè‰²
 				float3 cloud = fragCloud(uv, normalwPos, skyColor);
 
 
-				//´óµØ¿ØÖÆ²ÎÊı
+				//å¤§åœ°æ§åˆ¶å‚æ•°
 				float groundFactor = saturate((((0.5*_GroundSharpness) + normalwPos.g) / _GroundSharpness));
-				//»ìºÏ´óµØÑÕÉ«
+				//æ··åˆå¤§åœ°é¢œè‰²
 				float3 blendGroundSky = lerp(_Ground.rgb, cloud, groundFactor);
 
 
-				//Ë®Æ½Ïß»ìºÏÖµ
+				//æ°´å¹³çº¿æ··åˆå€¼
 				float horizon = pow((1.0 - abs(normalwPos.g)), _HorizonSharpness);
 
 
 				float sun_t = (_LightEccentricity*(1.0 - cycle));
 				float LdotwPos = dot(normalwPos, lightDirection);
 				float LdotwPos05 = (LdotwPos*0.5 + 0.5);
-				//»ìºÏË®Æ½ÏßÑÕÉ«
+				//æ··åˆæ°´å¹³çº¿é¢œè‰²
 				float3 blendHorizon = lerp(blendGroundSky,
 					pow(_LightColor0.rgb, ((1.0 - horizon)*sun_t)), (horizon*(LdotwPos05 + pow(LdotwPos05, _nHorizonRelation))));
 
 
 
-				//Ì«Ñô¿ØÖÆ²ÎÊı£¬´óĞ¡¼°ÈñÀû¶È
+				//å¤ªé˜³æ§åˆ¶å‚æ•°ï¼Œå¤§å°åŠé”åˆ©åº¦
                 float sunFactor = saturate((pow(saturate(LdotwPos),exp(_SunSize))*exp(_SunSharpness)));
-				//ÔÂÁÁ¿ØÖÆ²ÎÊı
+				//æœˆäº®æ§åˆ¶å‚æ•°
 				float moonFactor = saturate((pow(saturate((-1 * LdotwPos)), exp(_MoonSize))*exp(_MoonSharpness)));
 
-				//»ìºÏÌ«ÑôÑÕÉ«
+				//æ··åˆå¤ªé˜³é¢œè‰²
 				float3 blendSun = lerp(blendHorizon,(1.0*pow(_LightColor0.rgb, (sun_t*(1.0 - sunFactor)))), sunFactor);
 
-				//»ìºÏÔÂÁÁÑÕÉ«
+				//æ··åˆæœˆäº®é¢œè‰²
 				float3 blendMoon = lerp(blendSun,(1.0*_MoonColor.rgb), moonFactor);
 
                 
 				float3 allColor = max(blendMoon, 0.0);
 
 
-				//ÆÁÄ»¶¶¶¯
+				//å±å¹•æŠ–åŠ¨
                 float ditherI = pow(_DitheringIntensity,_DitheringIntensity);
                 float2 ditherUV = lerp(i.uv0,sceneUVs.rg,_ScreenSpaceNoise);
                 float2 skew = ditherUV + 0.2127+ditherUV.x*0.3713*ditherUV.y;
