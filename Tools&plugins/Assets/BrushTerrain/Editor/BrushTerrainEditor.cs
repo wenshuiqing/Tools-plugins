@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -153,7 +153,7 @@ public class BrushTerrainEditor : Editor
     private void EditTerrain()
     {
         HandleUtility.AddDefaultControl(0);
-        if ((Event.current.type == EventType.mouseDrag && Event.current.alt == false && Event.current.control == false && Event.current.shift == false && Event.current.button == 0) || (Event.current.type == EventType.MouseDown && Event.current.shift == false && Event.current.alt == false && Event.current.control == false && Event.current.button == 0))
+        if ((Event.current.type == EventType.MouseDrag && Event.current.alt == false && Event.current.control == false && Event.current.shift == false && Event.current.button == 0) || (Event.current.type == EventType.MouseDown && Event.current.shift == false && Event.current.alt == false && Event.current.control == false && Event.current.button == 0))
         {
             UpdatePaint(false);
             pre = new Preview();

@@ -1,3 +1,5 @@
+// Upgrade NOTE: upgraded instancing buffer 'MyProperties' to new syntax.
+
 // Upgrade NOTE: replaced 'UNITY_INSTANCE_ID' with 'UNITY_VERTEX_INPUT_INSTANCE_ID'
 
 Shader "ZHT/SimplestInstancedShader"
@@ -32,9 +34,10 @@ Shader "ZHT/SimplestInstancedShader"
 		UNITY_VERTEX_INPUT_INSTANCE_ID
 	};
 
-	UNITY_INSTANCING_CBUFFER_START(MyProperties)
+	UNITY_INSTANCING_BUFFER_START(MyProperties)
 		UNITY_DEFINE_INSTANCED_PROP(float4, _Color)
-		UNITY_INSTANCING_CBUFFER_END
+#define _Color_arr MyProperties
+		UNITY_INSTANCING_BUFFER_END(MyProperties)
 
 		v2f vert(appdata v)
 	{
@@ -50,7 +53,7 @@ Shader "ZHT/SimplestInstancedShader"
 	fixed4 frag(v2f i) : SV_Target
 	{
 		UNITY_SETUP_INSTANCE_ID(i);
-		return UNITY_ACCESS_INSTANCED_PROP(_Color);
+		return UNITY_ACCESS_INSTANCED_PROP(_Color_arr, _Color);
 	}
 		ENDCG
 	}
